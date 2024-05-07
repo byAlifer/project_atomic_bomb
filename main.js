@@ -34,8 +34,3 @@ function fixScreen() {
 }
 
 window.addEventListener('resize', fixScreen)
-
-//Vercel metrics
-import { injectSpeedInsights } from '@vercel/speed-insights';
-
-injectSpeedInsights();

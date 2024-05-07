@@ -34,6 +34,14 @@ nav {
     transform: rotate(360deg);
 }
 
+#burguer_menu {
+    display: none;
+}
+
+#exit_menu {
+   display: none; 
+}
+
 #menu_modal {
     display: none;
 }
@@ -50,36 +58,39 @@ nav {
         z-index: 1;   
     }
 
-    #switch_menu {
+    #burguer_menu {
+        display: block;
         position: fixed;
         right: 1.5rem;
-        transition: 0.4s;
     }
 
-    #switch_menu:hover {
-        transform: rotate(90deg);
+    #exit_menu {
+        position: fixed;
+        right: 1.5rem;
     }
 
     #menu_modal {
-        display: hidden;
+        display:  none;
+        justify-content: center;
         position: fixed;
         top: 5rem;
         height: 100%;
         width: 100vw;
         background-color: blue;
     }
+
+    #nav_mobile {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 10rem;
+    }
 }
 
 /*Telas de tablet*/
 @media screen and (min-width: 780px) and (max-width: 1023px) {
-    #switch_menu {
-        display: none;
-    }
 }
 
 /*Telas Desktop*/
 @media screen and (min-width: 1024px) {
-    #switch_menu {
-        display: none;
-    }
 }
